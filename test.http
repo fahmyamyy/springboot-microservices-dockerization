@@ -1,0 +1,33 @@
+#CREATE NEW USER
+POST localhost:8083/order/warung
+Content-Type: application/json
+
+{
+  "orderId  ": "1",
+  "name": "asd",
+  "qty": 1,
+  "price": 10000.0
+}
+###
+
+GET localhost:8080/order
+Content-Type: application/json
+
+{
+  "orderId  ": "1",
+  "name": "asd",
+  "qty": 1,
+  "price": 10000.0
+}
+
+###
+GET localhost:8083/order
+Content-Type: application/json
+
+###
+
+###
+GET localhost:8081/publisher
+Content-Type: application/json
+
+###

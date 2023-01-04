@@ -1,0 +1,25 @@
+POST localhost:8085/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "username" : "BeyonderAdmin",
+  "email" : "fajri.illahi@zenrooms.com",
+  "password" : "Fajri@123",
+  "name" : "Fajri Illahi",
+  "role" : "admin"
+}
+
+###
+
+POST localhost:8085/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username" : "BeyonderAdmin",
+  "password" : "Fajri@123"
+}
+
+###
+
+GET localhost:8085/api/v1/auth/all-users
+Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiQmV5b25kZXJBZG1pbiIsImV4cCI6MTY3MTQxNjkzNCwiaWF0IjoxNjcxNDEzMzM0LCJzY29wZSI6IiJ9.sRyBIkFdpg_WFGKrOFT19V9mjUhVrhRs6yq7RyKM665SZtUBIIpCfrqFdUpXEP75S3TmWO1-EguMcml2HEHnSKei_dNLdoJzXYyuFePJIsdtRvaoEw8vpYJLqbRKbn5O2pQRb5at8OM1_AsyTvcxEoGaUjkBY1zqpzdfps3SRlCD6o2V-G1qsZWBRPT2-WW5X3X1wf3pVFQjWi5h6ulSQLzyy1d285mhLBTjHVM-I7Prv2k-t1U5_4DO8rWMzuiOYDYO4kcOwyMzTSLmy4_9u29eHSoy5GMYmRox5qU9SbUQkM8FpeE7tpyY8n0vyQuDmG6pGFK4xFD9jXXgqIFGuw

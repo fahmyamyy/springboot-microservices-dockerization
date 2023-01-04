@@ -1,0 +1,119 @@
+2023-01-04 09:16:58.406  INFO 96724 --- [main] c.b.authservice.AuthServiceApplication   : Starting AuthServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 96724 (/Users/da/IdeaProjects/MessageBroker/auth-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 09:16:58.769  INFO 96724 --- [main] c.b.authservice.AuthServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 09:17:20.520  INFO 96724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 09:17:22.209  INFO 96724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1204 ms. Found 1 JPA repository interfaces.
+2023-01-04 09:17:36.149  INFO 96724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-04 09:17:36.309  INFO 96724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 09:17:36.309  INFO 96724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-04 09:17:38.551  INFO 96724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 09:17:38.551  INFO 96724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 37508 ms
+2023-01-04 09:17:50.292  INFO 96724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 09:17:57.492  INFO 96724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 09:18:02.286  INFO 96724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 09:18:08.952  INFO 96724 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21f479cd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@102fd71d, org.springframework.security.web.context.SecurityContextPersistenceFilter@69a3bf40, org.springframework.security.web.header.HeaderWriterFilter@5df54296, org.springframework.security.web.authentication.logout.LogoutFilter@1d0f7bcf, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@5a3be84, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a341e3d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a4dcede, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8e00c02, org.springframework.security.web.session.SessionManagementFilter@3f3f554f, org.springframework.security.web.access.ExceptionTranslationFilter@131b58d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@da67c46]
+2023-01-04 09:18:09.396  WARN 96724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 09:18:11.157  INFO 96724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-04 09:18:11.197  INFO 96724 --- [main] c.b.authservice.AuthServiceApplication   : Started AuthServiceApplication in 84.926 seconds (JVM running for 107.177)
+2023-01-04 09:18:35.282  INFO 96724 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 09:18:35.289  INFO 96724 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 09:18:35.290  INFO 96724 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-04 09:18:38.108 ERROR 96724 --- [http-nio-8085-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: null value in column "status" of relation "users" violates not-null constraint
+  Detail: Failing row contains (1, 2023-01-04 09:18:37.407394, fajri.illahi@zenrooms.com, Fajri Illahi, $2a$10$.ikgNqcOLJGZCTlUTKayDeGm6vqGw0oXFbBXswRLNH8MsIw9C7czu, admin, null, 2023-01-04 09:18:37.407448, Beyonder123).
+2023-01-04 09:32:50.554  INFO 96724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 09:32:50.623  INFO 96724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 09:32:50.628  INFO 96724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 09:33:10.824  INFO 897 --- [main] c.b.authservice.AuthServiceApplication   : Starting AuthServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 897 (/Users/da/IdeaProjects/MessageBroker/auth-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 09:33:10.861  INFO 897 --- [main] c.b.authservice.AuthServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 09:33:12.494  INFO 897 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 09:33:12.586  INFO 897 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2023-01-04 09:33:13.827  INFO 897 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-04 09:33:13.836  INFO 897 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 09:33:13.836  INFO 897 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-04 09:33:14.099  INFO 897 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 09:33:14.100  INFO 897 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3137 ms
+2023-01-04 09:33:15.645  INFO 897 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 09:33:21.927  INFO 897 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 09:33:32.785  INFO 897 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 09:33:38.630  INFO 897 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45635ae1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7adbec34, org.springframework.security.web.context.SecurityContextPersistenceFilter@3aa1c45, org.springframework.security.web.header.HeaderWriterFilter@7857cb1d, org.springframework.security.web.authentication.logout.LogoutFilter@1d67348a, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@58ad0586, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1614499b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1468fc85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4aea57dc, org.springframework.security.web.session.SessionManagementFilter@6fad5ace, org.springframework.security.web.access.ExceptionTranslationFilter@4a18e0f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d3a28b5]
+2023-01-04 09:33:39.205  WARN 897 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 09:33:44.217  INFO 897 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-04 09:33:44.300  INFO 897 --- [main] c.b.authservice.AuthServiceApplication   : Started AuthServiceApplication in 33.997 seconds (JVM running for 46.821)
+2023-01-04 09:33:50.517  INFO 897 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 09:33:50.518  INFO 897 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 09:33:50.538  INFO 897 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2023-01-04 10:30:53.451  WARN 897 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m977ms).
+2023-01-04 12:56:23.990  INFO 897 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 12:56:28.787  INFO 897 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 12:56:30.122  INFO 897 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 14:25:44.189  INFO 69455 --- [main] c.b.authservice.AuthServiceApplication   : Starting AuthServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 69455 (/Users/da/IdeaProjects/MessageBroker/auth-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 14:25:44.383  INFO 69455 --- [main] c.b.authservice.AuthServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 14:26:08.996  INFO 69455 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 14:26:14.879  INFO 69455 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3766 ms. Found 1 JPA repository interfaces.
+2023-01-04 14:26:48.618  INFO 69455 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-04 14:26:49.042  INFO 69455 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 14:26:49.042  INFO 69455 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-04 14:27:00.942  INFO 69455 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 14:27:00.942  INFO 69455 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 74963 ms
+2023-01-04 14:27:03.053  WARN 69455 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-01-04 14:27:03.078  INFO 69455 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-04 14:27:03.337  INFO 69455 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-04 14:27:04.243 ERROR 69455 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-01-04 15:31:28.078  WARN 84862 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2023-01-04 15:31:29.015  INFO 84862 --- [main] c.b.authservice.AuthServiceApplication   : Starting AuthServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 84862 (/Users/da/IdeaProjects/MessageBroker/auth-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 15:31:29.016  INFO 84862 --- [main] c.b.authservice.AuthServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 15:31:46.797  INFO 84862 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 15:31:47.889  INFO 84862 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 747 ms. Found 1 JPA repository interfaces.
+2023-01-04 15:32:06.251  INFO 84862 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-04 15:32:07.432  INFO 84862 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 15:32:07.433  INFO 84862 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-04 15:32:13.312  INFO 84862 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 15:32:13.440  INFO 84862 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 41610 ms
+2023-01-04 15:32:25.410  INFO 84862 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 15:32:34.376  INFO 84862 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 15:33:00.472  INFO 84862 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 15:33:36.223  INFO 84862 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3adbd038, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e976553, org.springframework.security.web.context.SecurityContextPersistenceFilter@726a5e6a, org.springframework.security.web.header.HeaderWriterFilter@495f3965, org.springframework.security.web.authentication.logout.LogoutFilter@12dc702b, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@2a191f83, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b889cb6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74faf450, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c108c05, org.springframework.security.web.session.SessionManagementFilter@43efe064, org.springframework.security.web.access.ExceptionTranslationFilter@75db328e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@f996445]
+2023-01-04 15:33:39.997  WARN 84862 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 15:33:53.886  INFO 84862 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-04 15:33:54.197  INFO 84862 --- [main] c.b.authservice.AuthServiceApplication   : Started AuthServiceApplication in 172.146 seconds (JVM running for 190.652)
+2023-01-04 15:34:33.655  INFO 84862 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 15:34:33.825  INFO 84862 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 15:34:33.829  INFO 84862 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 15:35:50.409  INFO 85970 --- [main] c.b.authservice.AuthServiceApplication   : Starting AuthServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 85970 (/Users/da/IdeaProjects/MessageBroker/auth-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 15:35:50.463  INFO 85970 --- [main] c.b.authservice.AuthServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 15:35:52.987  INFO 85970 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 15:35:53.181  INFO 85970 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 160 ms. Found 1 JPA repository interfaces.
+2023-01-04 15:35:54.488  INFO 85970 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-04 15:35:54.514  INFO 85970 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 15:35:54.515  INFO 85970 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-04 15:35:54.811  INFO 85970 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 15:35:54.811  INFO 85970 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4118 ms
+2023-01-04 15:35:57.905  INFO 85970 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 15:35:58.399  INFO 85970 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 15:36:00.538  INFO 85970 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 15:36:02.803  INFO 85970 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b9b5da5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ff29e8b, org.springframework.security.web.context.SecurityContextPersistenceFilter@320770d7, org.springframework.security.web.header.HeaderWriterFilter@c96c497, org.springframework.security.web.authentication.logout.LogoutFilter@36cdcae0, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@5bcfdaf3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d6a22dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67671db1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7acfcfc4, org.springframework.security.web.session.SessionManagementFilter@1f8d42d1, org.springframework.security.web.access.ExceptionTranslationFilter@45cf0c15, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14624acc]
+2023-01-04 15:36:02.913  WARN 85970 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 15:36:03.818  INFO 85970 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-04 15:36:03.883  INFO 85970 --- [main] c.b.authservice.AuthServiceApplication   : Started AuthServiceApplication in 14.887 seconds (JVM running for 33.646)
+2023-01-04 15:36:21.502  INFO 85970 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 15:36:21.502  INFO 85970 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 15:36:21.503  INFO 85970 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

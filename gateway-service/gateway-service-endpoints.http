@@ -1,0 +1,72 @@
+###
+POST localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "username" : "Beyonder123",
+  "email" : "fajri.illahi@zenrooms.com",
+  "password" : "Fajri@123",
+  "name" : "Fajri Illahi",
+  "role" : "admin"
+}
+
+###
+
+POST localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "username" : "amyganzz",
+  "email" : "fahmy.malikk@gmail.com",
+  "password" : "Fahmy@123",
+  "name" : "Fahmy Malik",
+  "role" : "user"
+}
+###
+POST localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username" : "Beyonder123",
+  "password" : "Fajri@123"
+}
+
+> {%
+client.global.set("auth_token", response.body.data);
+%}
+###
+
+GET localhost:8080/api/v1/auth/all-users
+#Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiQmV5b25kZXIxMjMiLCJleHAiOjE2NzI3MTg3NDYsImlhdCI6MTY3MjcxNTE0Niwic2NvcGUiOiIifQ.y3Mg4lk26FFrDFDh1zRPQIi40tAIWrJ7f32wpJKjbBsfsYKT4P0zvVhFiq_urKwVop4pedZVsKmL9uvto3WSyUtFVu9sLhy1HpVgBIWkzKj7OOIvxrIkB3fPr37Z8iwOBWxiKRPzMK3_FP4CD-V4-h0pjhZWner-KHcigbMyuO_oa6MO9M5WldZ4dgL7HLJPBk0wS0j8CK2EfmwSWirVpmOGGgfYncR5k2o1dVcGf-L82JcXgdhtwRcBJ5vIQevXORCIQXrVDLD5lfe7LlbeltL0xnOSQ8CwKXkYJHMkK3kDfgUvHjZXQV8hcVjfnlKwL-tL4dHucE2F4DT-UZqSig
+Authorization: Bearer {{auth_token}}
+
+### lesson-service
+
+GET http://localhost:8080/api/v1/lessons/
+#Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYW15Z2FuenoiLCJleHAiOjE2NzI3MTg3MDAsImlhdCI6MTY3MjcxNTEwMCwic2NvcGUiOiIifQ.Vbw2djRCGiomBCJ0IqqE0FgFSjgYoTyTo8KbAko05ibBqvFprQEifeXdCp1_bZ1i-Y3BeIZYdchxIZUTWrH7yn5GVZrDqE_BfVKV5sBQhmG027caYuemasumAQqjXoJmAWcsCgD_xTpthhWLAVm0uIXWf6DJdw7tE3hzE-cTVlX5hDdvB1wUbT_ENgbM34CQXTMfB61qfhGjx_glVc2gwAb1fPiDF9AzFyD4GiQvhcVm0RWLQOpLGgOs7M0KdbtBEsUgbFvfv3p06XW16kZ3-EngSiX_p4x9xAXsQhqRic6AKDYCXEKGkVPQjYYKmEy_JsVMrU4TQFSaBYqFhh0Dnw
+Authorization: Bearer {{auth_token}}
+###
+POST http://localhost:8080/api/v1/lessons/
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "name": "dfhg"
+}
+###
+GET http://localhost:8080/api/v1/publisher/test
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYW15Z2FuenoiLCJleHAiOjE2NzI3MTg3MDAsImlhdCI6MTY3MjcxNTEwMCwic2NvcGUiOiIifQ.Vbw2djRCGiomBCJ0IqqE0FgFSjgYoTyTo8KbAko05ibBqvFprQEifeXdCp1_bZ1i-Y3BeIZYdchxIZUTWrH7yn5GVZrDqE_BfVKV5sBQhmG027caYuemasumAQqjXoJmAWcsCgD_xTpthhWLAVm0uIXWf6DJdw7tE3hzE-cTVlX5hDdvB1wUbT_ENgbM34CQXTMfB61qfhGjx_glVc2gwAb1fPiDF9AzFyD4GiQvhcVm0RWLQOpLGgOs7M0KdbtBEsUgbFvfv3p06XW16kZ3-EngSiX_p4x9xAXsQhqRic6AKDYCXEKGkVPQjYYKmEy_JsVMrU4TQFSaBYqFhh0Dnw
+Authorization: Bearer {{auth_token}}
+###
+POST http://localhost:8080/api/v1/publisher/warung
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYW15Z2FuenoiLCJleHAiOjE2NzI3MTg3MDAsImlhdCI6MTY3MjcxNTEwMCwic2NvcGUiOiIifQ.Vbw2djRCGiomBCJ0IqqE0FgFSjgYoTyTo8KbAko05ibBqvFprQEifeXdCp1_bZ1i-Y3BeIZYdchxIZUTWrH7yn5GVZrDqE_BfVKV5sBQhmG027caYuemasumAQqjXoJmAWcsCgD_xTpthhWLAVm0uIXWf6DJdw7tE3hzE-cTVlX5hDdvB1wUbT_ENgbM34CQXTMfB61qfhGjx_glVc2gwAb1fPiDF9AzFyD4GiQvhcVm0RWLQOpLGgOs7M0KdbtBEsUgbFvfv3p06XW16kZ3-EngSiX_p4x9xAXsQhqRic6AKDYCXEKGkVPQjYYKmEy_JsVMrU4TQFSaBYqFhh0Dnw
+Authorization: Bearer {{auth_token}}
+
+{
+  "orderId  ": "1",
+  "name": "halo consumer",
+  "qty": 1,
+  "price": 10000.0
+}

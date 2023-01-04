@@ -1,0 +1,16 @@
+GET localhost:8081/api/v1/lessons
+
+###
+
+GET localhost:8081/api/v1/lessons/pagination?size=2&page=1&name=Biology
+
+###
+
+POST localhost:8081/api/v1/lessons
+Content-Type: application/json
+
+{
+  "name": "Computer Science"
+}
+
+

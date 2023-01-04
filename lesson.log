@@ -1,0 +1,244 @@
+2023-01-04 09:41:27.800  INFO 2874 --- [main] c.b.l.LessonServiceApplication           : Starting LessonServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 2874 (/Users/da/IdeaProjects/MessageBroker/lesson-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 09:41:27.881  INFO 2874 --- [main] c.b.l.LessonServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 09:41:33.146  INFO 2874 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 09:41:33.178  INFO 2874 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 09:41:33.577  INFO 2874 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 350 ms. Found 2 JPA repository interfaces.
+2023-01-04 09:41:33.659  INFO 2874 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 09:41:33.660  INFO 2874 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-04 09:41:33.675  INFO 2874 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 09:41:33.675  INFO 2874 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.UserLessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 09:41:33.675  INFO 2874 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-04 09:41:35.159  INFO 2874 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-04 09:41:35.168  INFO 2874 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 09:41:35.168  INFO 2874 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-04 09:41:35.347  INFO 2874 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 09:41:35.348  INFO 2874 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7322 ms
+2023-01-04 09:41:36.865  INFO 2874 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 09:41:37.207  INFO 2874 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 09:41:38.894  INFO 2874 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 09:41:43.429  WARN 2874 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 09:41:45.015  INFO 2874 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-04 09:41:45.070  INFO 2874 --- [main] c.b.l.LessonServiceApplication           : Started LessonServiceApplication in 25.67 seconds (JVM running for 37.136)
+2023-01-04 09:48:49.634  INFO 2874 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 09:48:49.635  INFO 2874 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 09:48:49.645  INFO 2874 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2023-01-04 09:48:49.956  INFO 2874 --- [http-nio-8088-exec-1] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 09:48:52.398  INFO 2874 --- [http-nio-8088-exec-1] c.b.l.s.i.LessonServiceImplementation    : Getting All Lessons from databases
+2023-01-04 09:50:41.302  INFO 2874 --- [http-nio-8088-exec-4] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 09:50:43.956  INFO 2874 --- [http-nio-8088-exec-4] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=Computer Science)
+2023-01-04 09:50:48.345  INFO 2874 --- [http-nio-8088-exec-5] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 09:50:48.398  INFO 2874 --- [http-nio-8088-exec-5] c.b.l.s.i.LessonServiceImplementation    : Getting All Lessons from databases
+2023-01-04 09:51:24.876  INFO 2874 --- [http-nio-8088-exec-6] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 09:51:24.904  INFO 2874 --- [http-nio-8088-exec-6] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=Computer Science)
+2023-01-04 09:51:28.463  INFO 2874 --- [http-nio-8088-exec-7] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 09:51:28.471  INFO 2874 --- [http-nio-8088-exec-7] c.b.l.s.i.LessonServiceImplementation    : Getting All Lessons from databases
+2023-01-04 09:51:39.109  INFO 2874 --- [http-nio-8088-exec-8] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 09:51:45.763  INFO 2874 --- [http-nio-8088-exec-9] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 09:51:48.288  INFO 2874 --- [http-nio-8088-exec-10] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 10:27:35.317  INFO 2874 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:27:35.653  INFO 2874 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 10:27:35.657  INFO 2874 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 10:29:35.693  WARN 13831 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2023-01-04 10:29:36.260  INFO 13831 --- [main] c.b.l.LessonServiceApplication           : Starting LessonServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 13831 (/Users/da/IdeaProjects/MessageBroker/lesson-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 10:29:36.261  INFO 13831 --- [main] c.b.l.LessonServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 10:29:56.566  INFO 13831 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:29:56.890  INFO 13831 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 10:30:01.915  INFO 13831 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4600 ms. Found 2 JPA repository interfaces.
+2023-01-04 10:30:02.289  INFO 13831 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:30:02.300  INFO 13831 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-04 10:30:02.530  INFO 13831 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:30:02.531  INFO 13831 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.UserLessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:30:02.531  INFO 13831 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2023-01-04 10:30:13.751  INFO 13831 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-04 10:30:14.002  INFO 13831 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 10:30:14.002  INFO 13831 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-04 10:30:20.567  INFO 13831 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 10:30:20.699  INFO 13831 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 42400 ms
+2023-01-04 10:30:41.031  INFO 13831 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 10:30:44.642  INFO 13831 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 10:30:54.576  INFO 13831 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:30:58.344  WARN 13831 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 10:30:59.859  INFO 13831 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-04 10:30:59.907  INFO 13831 --- [main] c.b.l.LessonServiceApplication           : Started LessonServiceApplication in 103.914 seconds (JVM running for 132.199)
+2023-01-04 10:31:36.307  INFO 13831 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 10:31:36.337  INFO 13831 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 10:31:36.341  INFO 13831 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-01-04 10:31:37.535  INFO 13831 --- [http-nio-8088-exec-1] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 10:31:38.710  INFO 13831 --- [http-nio-8088-exec-1] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=Computer Science)
+2023-01-04 10:31:48.919  INFO 13831 --- [http-nio-8088-exec-2] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 10:31:48.921  INFO 13831 --- [http-nio-8088-exec-2] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=asd)
+2023-01-04 10:31:53.786  INFO 13831 --- [http-nio-8088-exec-3] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 10:31:53.788  INFO 13831 --- [http-nio-8088-exec-3] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=bca)
+2023-01-04 10:31:58.085  INFO 13831 --- [http-nio-8088-exec-4] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 10:31:58.122  INFO 13831 --- [http-nio-8088-exec-4] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=asd)
+2023-01-04 10:32:01.839  INFO 13831 --- [http-nio-8088-exec-5] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 10:32:01.916  INFO 13831 --- [http-nio-8088-exec-5] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=dsa)
+2023-01-04 10:32:05.938  INFO 13831 --- [http-nio-8088-exec-6] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 10:32:06.080  INFO 13831 --- [http-nio-8088-exec-6] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=dfhg)
+2023-01-04 10:37:03.509  INFO 13831 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:37:03.581  INFO 13831 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 10:37:03.584  INFO 13831 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 10:37:35.403  WARN 15843 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2023-01-04 10:37:35.468  INFO 15843 --- [main] c.b.l.LessonServiceApplication           : Starting LessonServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 15843 (/Users/da/IdeaProjects/MessageBroker/lesson-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 10:37:35.468  INFO 15843 --- [main] c.b.l.LessonServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 10:37:38.085  INFO 15843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:37:38.146  INFO 15843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 10:37:38.418  INFO 15843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 2 JPA repository interfaces.
+2023-01-04 10:37:38.472  INFO 15843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:37:38.473  INFO 15843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-04 10:37:38.488  INFO 15843 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:37:38.489  INFO 15843 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.UserLessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:37:38.489  INFO 15843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-04 10:37:39.494  INFO 15843 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-04 10:37:39.513  INFO 15843 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 10:37:39.513  INFO 15843 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-04 10:37:39.625  INFO 15843 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 10:37:39.625  INFO 15843 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4053 ms
+2023-01-04 10:37:40.900  INFO 15843 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 10:37:41.347  INFO 15843 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 10:37:42.453  INFO 15843 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:37:43.958  WARN 15843 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 10:37:44.904  INFO 15843 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-04 10:37:44.959  INFO 15843 --- [main] c.b.l.LessonServiceApplication           : Started LessonServiceApplication in 16.86 seconds (JVM running for 26.07)
+2023-01-04 10:39:11.151  INFO 15843 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 10:39:11.171  INFO 15843 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 10:39:11.172  INFO 15843 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-04 10:40:50.352  INFO 15843 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:40:50.436  INFO 15843 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 10:40:50.438  INFO 15843 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 10:41:05.415  INFO 16708 --- [main] c.b.l.LessonServiceApplication           : Starting LessonServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 16708 (/Users/da/IdeaProjects/MessageBroker/lesson-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 10:41:05.437  INFO 16708 --- [main] c.b.l.LessonServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 10:41:06.980  INFO 16708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:41:06.982  INFO 16708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 10:41:07.214  INFO 16708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 213 ms. Found 2 JPA repository interfaces.
+2023-01-04 10:41:07.270  INFO 16708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:41:07.271  INFO 16708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-04 10:41:07.285  INFO 16708 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:41:07.286  INFO 16708 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.UserLessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:41:07.286  INFO 16708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-01-04 10:41:08.137  INFO 16708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-04 10:41:08.156  INFO 16708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 10:41:08.157  INFO 16708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-04 10:41:08.270  INFO 16708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 10:41:08.270  INFO 16708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2735 ms
+2023-01-04 10:41:10.266  INFO 16708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 10:41:10.610  INFO 16708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 10:41:11.730  INFO 16708 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:41:13.090  WARN 16708 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 10:41:14.204  INFO 16708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-04 10:41:14.216  INFO 16708 --- [main] c.b.l.LessonServiceApplication           : Started LessonServiceApplication in 9.352 seconds (JVM running for 15.839)
+2023-01-04 10:41:42.925  INFO 16708 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 10:41:43.010  INFO 16708 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 10:41:43.011  INFO 16708 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-04 10:42:26.743  INFO 16708 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:42:26.817  INFO 16708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 10:42:26.819  INFO 16708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 10:42:45.507  INFO 17105 --- [main] c.b.l.LessonServiceApplication           : Starting LessonServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 17105 (/Users/da/IdeaProjects/MessageBroker/lesson-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 10:42:45.528  INFO 17105 --- [main] c.b.l.LessonServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 10:42:47.723  INFO 17105 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:42:47.748  INFO 17105 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 10:42:49.539  INFO 17105 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1725 ms. Found 2 JPA repository interfaces.
+2023-01-04 10:42:49.773  INFO 17105 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:42:49.774  INFO 17105 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-04 10:42:49.862  INFO 17105 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:42:49.862  INFO 17105 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.UserLessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:42:49.862  INFO 17105 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-01-04 10:42:51.041  INFO 17105 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-04 10:42:51.051  INFO 17105 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 10:42:51.051  INFO 17105 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-04 10:42:51.152  INFO 17105 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 10:42:51.153  INFO 17105 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5436 ms
+2023-01-04 10:42:52.480  INFO 17105 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 10:42:53.263  INFO 17105 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 10:42:54.222  INFO 17105 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:42:56.969  WARN 17105 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 10:42:58.275  INFO 17105 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-04 10:42:58.447  INFO 17105 --- [main] c.b.l.LessonServiceApplication           : Started LessonServiceApplication in 13.684 seconds (JVM running for 20.812)
+2023-01-04 10:44:43.642  INFO 17105 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 10:44:43.697  INFO 17105 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 10:44:43.698  INFO 17105 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-04 10:45:38.863  INFO 17105 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:45:38.925  INFO 17105 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 10:45:38.927  INFO 17105 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 10:45:55.769  INFO 17853 --- [main] c.b.l.LessonServiceApplication           : Starting LessonServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 17853 (/Users/da/IdeaProjects/MessageBroker/lesson-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 10:45:55.805  INFO 17853 --- [main] c.b.l.LessonServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 10:46:01.845  INFO 17853 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:46:01.970  INFO 17853 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 10:46:03.304  INFO 17853 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1178 ms. Found 2 JPA repository interfaces.
+2023-01-04 10:46:03.438  INFO 17853 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:46:03.439  INFO 17853 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-04 10:46:03.453  INFO 17853 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:46:03.454  INFO 17853 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.UserLessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:46:03.454  INFO 17853 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-01-04 10:46:04.828  INFO 17853 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-04 10:46:04.837  INFO 17853 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 10:46:04.837  INFO 17853 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-04 10:46:04.931  INFO 17853 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 10:46:04.932  INFO 17853 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8827 ms
+2023-01-04 10:46:06.133  INFO 17853 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 10:46:06.789  INFO 17853 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 10:46:07.843  INFO 17853 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:46:11.891  WARN 17853 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 10:46:15.717  INFO 17853 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-04 10:46:15.808  INFO 17853 --- [main] c.b.l.LessonServiceApplication           : Started LessonServiceApplication in 21.196 seconds (JVM running for 28.154)
+2023-01-04 10:46:46.538  INFO 17853 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 10:46:46.551  INFO 17853 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 10:46:46.551  INFO 17853 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-01-04 10:48:11.229  INFO 17853 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:48:11.301  INFO 17853 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 10:48:11.304  INFO 17853 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 10:48:35.655  INFO 18479 --- [main] c.b.l.LessonServiceApplication           : Starting LessonServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 18479 (/Users/da/IdeaProjects/MessageBroker/lesson-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 10:48:35.701  INFO 18479 --- [main] c.b.l.LessonServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 10:48:39.699  INFO 18479 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:48:39.701  INFO 18479 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 10:48:39.955  INFO 18479 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 234 ms. Found 2 JPA repository interfaces.
+2023-01-04 10:48:40.012  INFO 18479 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 10:48:40.012  INFO 18479 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-04 10:48:40.026  INFO 18479 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:48:40.026  INFO 18479 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.UserLessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 10:48:40.027  INFO 18479 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2023-01-04 10:48:41.169  INFO 18479 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-04 10:48:41.195  INFO 18479 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 10:48:41.195  INFO 18479 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-04 10:48:41.300  INFO 18479 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 10:48:41.301  INFO 18479 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5185 ms
+2023-01-04 10:48:42.608  INFO 18479 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 10:48:42.957  INFO 18479 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 10:48:43.928  INFO 18479 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 10:48:45.601  WARN 18479 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 10:48:46.635  INFO 18479 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-04 10:48:46.701  INFO 18479 --- [main] c.b.l.LessonServiceApplication           : Started LessonServiceApplication in 12.524 seconds (JVM running for 21.729)
+2023-01-04 10:49:06.715  INFO 18479 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-04 10:49:06.754  INFO 18479 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-04 10:49:06.755  INFO 18479 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-04 10:49:29.261  INFO 18479 --- [http-nio-8088-exec-3] c.b.l.controller.LessonController        : Hit controller for adding lesson
+2023-01-04 10:49:29.994  INFO 18479 --- [http-nio-8088-exec-3] c.b.l.s.i.LessonServiceImplementation    : Success add lesson : LessonDTO(id=null, name=dfhg)
+2023-01-04 10:49:42.441  INFO 18479 --- [http-nio-8088-exec-4] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 10:49:42.857  INFO 18479 --- [http-nio-8088-exec-4] c.b.l.s.i.LessonServiceImplementation    : Getting All Lessons from databases
+2023-01-04 10:50:01.681  INFO 18479 --- [http-nio-8088-exec-5] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 10:50:14.866  INFO 18479 --- [http-nio-8088-exec-6] c.b.l.controller.LessonController        : Hit controller for getting all lessons
+2023-01-04 12:56:14.428  INFO 18479 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 12:56:15.403  INFO 18479 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-04 12:56:15.406  INFO 18479 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-04 15:32:49.237  WARN 85155 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2023-01-04 15:32:49.792  INFO 85155 --- [main] c.b.l.LessonServiceApplication           : Starting LessonServiceApplication using Java 19.0.1 on DOKUs-iMac.local with PID 85155 (/Users/da/IdeaProjects/MessageBroker/lesson-service/target/classes started by da in /Users/da/IdeaProjects/MessageBroker)
+2023-01-04 15:32:49.794  INFO 85155 --- [main] c.b.l.LessonServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-01-04 15:33:36.384  INFO 85155 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 15:33:36.957  INFO 85155 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04 15:33:51.790  INFO 85155 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13286 ms. Found 2 JPA repository interfaces.
+2023-01-04 15:33:53.314  INFO 85155 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04 15:33:53.470  INFO 85155 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-04 15:33:54.195  INFO 85155 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.LessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 15:33:54.196  INFO 85155 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyonder.lessonservice.repository.UserLessonRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-01-04 15:33:54.196  INFO 85155 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-01-04 15:34:10.537  INFO 85155 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-01-04 15:34:11.227  INFO 85155 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-04 15:34:11.232  INFO 85155 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-04 15:34:14.336  INFO 85155 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-04 15:34:14.343  INFO 85155 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 82952 ms
+2023-01-04 15:34:31.584  INFO 85155 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04 15:34:40.035  INFO 85155 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04 15:34:45.510  INFO 85155 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04 15:34:51.328  WARN 85155 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04 15:34:52.781  INFO 85155 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-01-04 15:34:52.815  INFO 85155 --- [main] c.b.l.LessonServiceApplication           : Started LessonServiceApplication in 144.299 seconds (JVM running for 167.131)
